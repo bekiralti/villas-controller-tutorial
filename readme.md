@@ -8,9 +8,9 @@ If you encounter any problems following this tutorial, please feel free to open 
 
 # Installation
 
-**Assuming** we are on a Linux Distribution (specifically Arch Linux, but hopefully this should also work on other Linux Distributions, if not feel free to write an Issue or if you have the solution create a Pull Request). 
+**Assumption:** We are on a Linux Distribution (specifically Arch Linux, but hopefully this should also work on other Linux Distributions).
 
-This section will focus on installing `villas-controller` and `villas-node`.
+Let's kick things off by installing VILLAScontroller.
 
 ## VILLAScontroller
 
@@ -59,8 +59,10 @@ Next, we will install `villas-node`.
    ```bash
    cd node
    ```
-3. **WORK IN PROGRESS** At this moment in time I would redirect you to the [VILLASnode repository](https://github.com/VILLASframework/node/tree/master/packaging/nix), specifically using the `nix` packet manager to install VILLASnode on your system. I will try to write out this step in future, also describing how to actually compile VILLASnode (not using any packet managers whatsoever).
-4. Check if installation was successful:
+3. Personally, I installed the `nix` packet manager (yes, on Arch Linux) and installed VILLASnode via [nix.flake](https://github.com/VILLASframework/node/blob/master/flake.nix). I would highly recommend this since I encountered the least trouble this way.
+
+   At this moment in time I would like to redirect you to the official [VILLASnode documentation](https://github.com/VILLASframework/node/tree/master/packaging/nix).  I also managed to simply compile VILLASnode on my machine however I would like to write out this part (maybe you can help me out) 
+6. Check if installation was successful:
    ```bash
    villas-node -V
    ```
