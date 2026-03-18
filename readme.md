@@ -4,7 +4,9 @@ This guide will try to show how to use VILLAScontroller and also try to explain 
 
 # Installation
 
-**Assuming** we are on a Linux Distribution (specifically Arch Linux, but hopefully this should also work on other Linux Distributions, if not feel free to write an Issue or if you have the solution create a Pull Request). This section will focus on installing `villas-controller` and `villas-node`.
+**Assuming** we are on a Linux Distribution (specifically Arch Linux, but hopefully this should also work on other Linux Distributions, if not feel free to write an Issue or if you have the solution create a Pull Request). 
+
+This section will focus on installing `villas-controller` and `villas-node`.
 
 ## VILLAScontroller
 
