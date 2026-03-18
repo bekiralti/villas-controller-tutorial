@@ -82,33 +82,25 @@ docker run -p 5672:5672 -p 15672:15672 -d rabbitmq:management
 
 In order to give `villas-controller` the `broker_url` we can use two methods:
 
-1. Use a config file. E.g., simply create a new file called `config.json`:
-   ```json
-   {
-       "broker": {
-           "url" : "amqp://guest:guest@localhost/%2F"
-       }
-   }
-   ```
-   Run VILLAScontroller with the config file:
-   ```python
-   villas-controller -c config.json daemon
-   ```
-2. Use the command line and type:
-   ```bash
-   villas-controller -b "amqp://guest:guest@localhost/%2F" daemon
-   ```
-   
-> [!WARNING]
-> The second option crashes.
-> ```bash
->     comps = [c for c in self.config.components if c.enabled]
->                    ^^^^^^^^^^^^^^^^^^^^^^
-> TypeError: 'NoneType' object is not iterable
-> ```
+### Method 1
 
-If everything works, you should see an output like:
+Use a config file. E.g., simply create a new file called `config.json`:
+```json
+{
+    "broker": {
+        "url" : "amqp://guest:guest@localhost/%2F"
+    }
+}
+```
 
+Run VILLAScontroller with the config file:
+```python
+villas-controller -c config.json daemon
+```
+
+The Subcommand is `daemon` because at the end of the day `villas-controller` is supposed to run as a daemon.
+
+If everything works out you should see an output like this:
 ```bash
 2026-03-18 11:18:51 | INFO | villas.controller | Connecting to: amqp://guest:guest@localhost/%2F
 2026-03-18 11:18:51 | INFO | villas.controller.controller | Starting mixing for 0 components
@@ -120,6 +112,21 @@ If everything works, you should see an output like:
 2026-03-18 11:18:52 | INFO | villas.controller.controller | Starting mixing for 1 components
 2026-03-18 11:18:52 | INFO | kombu.mixins | Connected to amqp://guest:**@127.0.0.1:5672//
 ```
+
+### Method 2
+
+Use the command line and type:
+```bash
+villas-controller -b "amqp://guest:guest@localhost/%2F" daemon
+```
+   
+> [!WARNING]
+> However, this method crashes.
+> ```bash
+>     comps = [c for c in self.config.components if c.enabled]
+>                    ^^^^^^^^^^^^^^^^^^^^^^
+> TypeError: 'NoneType' object is not iterable
+> ```
 
 As you can see, you can freely define the `broker_url`. It just needs to direct to a running RabbitMQ service. Now, let's have a look at the so called *Components*.
 
