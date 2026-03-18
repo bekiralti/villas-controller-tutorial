@@ -156,7 +156,8 @@ VILLAScontroller basically consists of two parts,
 
   class Component:
   ```
-  Pretty much everything in VILLASController is a *Component*. `Component` and `ControllerMixin` are pretty much the core aspects of VILLASController.
+  Pretty much everything (exceptions exist) in VILLASController is a *Component*. If you look up which classes inherit from `Component` you will end up with a hierarchy such as:
+  
 
 # Controller Mixin
 **WORK IN PROGRESS**
