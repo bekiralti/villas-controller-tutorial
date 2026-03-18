@@ -83,7 +83,7 @@ Let's start cooking.
 
 ## RabbitMQ
 
-VILLASController uses RabbitMQ to communicate. Pretty much one of the first things the VILLASController does (besides parsing the arguments yada yada) is to connect to a RabbitMQ broker.
+VILLASController uses RabbitMQ to communicate. If you look into the source code, you will notice that connecting to a RabbitMQ broker is pretty much one of the first things VILLASController does (besides parsing the arguments of course).
 
 This is why a RabbitMQ service needs to be already running. A quick look into the [official documentation](https://villas.fein-aachen.org/docs/controller/usage) shows us how we can run RabbitMQ inside a Docker Container.
 ```bash
