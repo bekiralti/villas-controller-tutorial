@@ -157,7 +157,8 @@ VILLAScontroller basically consists of two parts,
   class Component:
   ```
   Pretty much everything (exceptions exist) in VILLASController is a *Component*. If you look up which classes inherit from `Component` you will end up with a hierarchy such as this (it might take some time for the SVG to load:
-  ![villas-controller-uml](villas-controller-uml.svg)  
+  ![villas-controller-uml](villas-controller-uml.svg)
+  The same diagram can also be found on the [official documentation](https://villas.fein-aachen.org/docs/controller/protocol).
 
 # Controller Mixin
 **WORK IN PROGRESS**
