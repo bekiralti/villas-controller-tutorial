@@ -142,7 +142,7 @@ As you can see, you can freely define the `broker_url`. It just needs to direct 
 
 # Components
 
-As mentioned earlier, I will spare you the technical details. However, you can have a look at [with_code_explanation](with_code_explanation/readme.md) to see how you can derive which *key-value* pairs are valid to use in the config file.
+As mentioned earlier, I will spare you the technical details. However, you can have a look at [with_code_explanation](with_code_explanation/readme.md) to see how you can derive which *name-value* pairs are valid to use in the config file.
 
 Before we start, I would like to mention that pretty much everything in VILLAScontroller is a *Component* (exceptions exist of course). You have to tell `villas-controller` via the config file on startup which components with which settings you want to have.
 
