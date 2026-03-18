@@ -177,7 +177,7 @@ Before we start, I would like to mention that pretty much everything in VILLASco
 Eventhough the following UML diagram belongs to the more detailed [with_code_explanation](with_code_explanation/readme.md), I think it still helps in understanding how each Component is build. 
 ![villas-controller-uml](villas-controller-uml.svg)
 
-A better, sleaker version of the same diagram can be found in the [official documentation](https://villas.fein-aachen.org/docs/controller/protocol).
+A sleaker, probably easier to digest version of the same diagram can be found in the [official documentation](https://villas.fein-aachen.org/docs/controller/protocol).
 
 VILLAScontroller first decides to which *category* a Component belongs. For that it looks at its field `category`. Let's keep our example going with only one Component.
 
