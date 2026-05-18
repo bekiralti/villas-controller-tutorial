@@ -276,4 +276,6 @@ def components(self) -> List[Component]:
 > ```
 
 # Controller Mixin
-**WORK IN PROGRESS**
+
+> [!NOTE]
+> If this interests you then let me know and I will keep working on it.
