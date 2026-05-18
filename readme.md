@@ -278,4 +278,4 @@ def components(self) -> List[Component]:
 # Controller Mixin
 
 > [!NOTE]
-> If this interests you then let me know and I will keep working on it.
+> If this interests you then let me know and I will keep working on it. Or maybe you have already worked this part out then I'd be happy to merge.
